@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    const int m = 12;
+    int arr[m] = { 5, -3, 12, 0, 7, 9, -1, 4, 8, 2, 6, 1 };
+
+    // Сортування за зростанням
+    for (int i = 0; i < m - 1; i++) {
+        for (int j = i + 1; j < m; j++) {
+            if (arr[i] > arr[j]) {
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+
+    cout << "Sorted in ascending order:\n";
+    for (int i = 0; i < m; i++) {
+        cout << arr[i] << " ";
+    }
+
+    // Сортування за спаданням
+    for (int i = 0; i < m - 1; i++) {
+        for (int j = i + 1; j < m; j++) {
+            if (arr[i] < arr[j]) {
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+
+    cout << "\n\nSorted in descending order:\n";
+    for (int i = 0; i < m; i++) {
+        cout << arr[i] << " ";
+    }
+
+    return 0;
+}
