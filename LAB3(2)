@@ -1,0 +1,36 @@
+#include <iostream>
+
+int main() {
+    int studentNumber;
+
+    std::cout << "Enter student number (1-7): ";
+    std::cin >> studentNumber;
+
+    switch (studentNumber) {
+        case 1:
+            std::cout << "Student #1: Ivanenko I.I." << std::endl;
+            break;
+        case 2:
+            std::cout << "Student #2: Petrenko P.P." << std::endl;
+            break;
+        case 3:
+            std::cout << "Student #3: Shevchenko S.S." << std::endl;
+            break;
+        case 4:
+            std::cout << "Student #4: Kovalenko K.K." << std::endl;
+            break;
+        case 5:
+            std::cout << "Student #5: Bondarenko B.B." << std::endl;
+            break;
+        case 6:
+            std::cout << "Student #6: Melnyk M.M." << std::endl;
+            break;
+        case 7:
+            std::cout << "Student #7: Tkachenko T.T." << std::endl;
+            break;
+        default:
+            std::cout << "Error: invalid student number!" << std::endl;
+    }
+
+    return 0;
+}
