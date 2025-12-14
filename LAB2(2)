@@ -1,0 +1,19 @@
+#include <iostream>
+
+int main() {
+    double x, y;
+
+    std::cout << "Enter x: ";
+    std::cin >> x;
+
+    std::cout << "Enter y: ";
+    std::cin >> y;
+
+    if (x >= 0 && y <= 1) {
+        std::cout << "The point belongs to the shaded area." << std::endl;
+    } else {
+        std::cout << "The point does NOT belong to the shaded area." << std::endl;
+    }
+
+    return 0;
+}
